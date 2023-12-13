@@ -1,0 +1,14 @@
+#INCLUDE "TOTVS.CH"
+
+User Function firtscreen()
+Local oDlg as Object 
+
+DEFINE MSDIALOG oDlg TITLE "Minha primeira tela"
+oDlg:nWidth:= 400
+oDlg:nHeight:= 400
+
+@06,10 SAY "tela advpl" of oDlg PIXEL
+
+ACTIVATE MSDIALOG oDlg CENTERED
+
+Return
